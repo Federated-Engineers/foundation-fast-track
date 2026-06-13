@@ -1,4 +1,4 @@
-# ⚡ Foundation Fast-Track
+# Foundation Fast-Track
 
 Welcome to **Federated Engineers**! 
 
@@ -8,7 +8,7 @@ Consider this curriculum your shortcut to understanding our production environme
 
 ---
 
-## 🎯 Why This Fast-Track Matters
+## Why This Fast-Track Matters
 
 At Federated Engineers, we don't just write code in isolation; we build interconnected ecosystems. This fast-track exists to help you **connect the dots** between writing a script locally and seeing it scale in a production cloud environment. 
 
@@ -16,7 +16,7 @@ Being "just okay" with these tools leads to friction, deployment bottlenecks, an
 
 ---
 
-## 🗺️ Repository Structure & How to Use It
+## Repository Structure & How to Use It
 
 The repository is divided into four chronological phases. Each folder contains dedicated markdown notes, curated YouTube resources, and a hands-on **Acceleration Exercise**.
 
@@ -29,14 +29,14 @@ foundation-fast-track/
 └── 04-delivery/                  # Module 4: CI/CD Pipelines
 ```
 
-# 💡 How to Make the Best Out of It:
+# How to Make the Best Out of It:
 Don't Skip the "Why": Before watching videos or writing code, read the Why We Use It section in each module. Understanding the business and engineering context is more important than memorizing syntax.
 
 Watch then Do: Watch the linked YouTube videos to establish your mental model, then immediately open the /exercises folder inside that module to practice.
 
 Break Things Safely: This repository is a sandbox. Tweak the Dockerfiles, break the Terraform code, and cause Git conflicts on purpose to learn how to fix them here, rather than in production.
 
-# 🏗️ The Pillars of Our Stack (The "Why")
+# The Pillars of Our Stack (The "Why")
 📁 01-local-essentials
 Git & GitHub: Federated Engineers is fundamentally a collaborative tool. Mastery of Git is a massive, non-negotiable must-have. You must be comfortable managing branches, resolving complex merge conflicts, and conducting clean Peer Reviews via Pull Requests. If our Git workflow stalls, our entire engineering shipping velocity stalls.
 
@@ -61,5 +61,5 @@ DBT (Data Build Tool): While Airflow handles the orchestration, DBT handles our 
 # 📁 04-delivery
 CI/CD Pipelines: Continuous Integration and Continuous Delivery sit at the corner of nearly every single repository at Federated Engineers. Automation is embedded as a strict standard across all our deliverable projects. Having a strong base knowledge of CI/CD pipelines will massively benefit you, enabling you to automate testing, linting, and cloud deployments the second your code is merged.
 
-# 🏁 Ready to Start?
+# Ready to Start?
 Let's get moving. Open up your terminal, clone this repository, and dive into your first module:
