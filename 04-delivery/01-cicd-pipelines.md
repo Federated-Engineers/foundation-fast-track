@@ -2,8 +2,8 @@
 
 ### Upstream Curriculum & Training Playlists
 To establish an enterprise-grade understanding of automated release workflows, cloud credentials isolation, and self-healing deployment design, you are required to complete these curated video modules:
-* 📺 **Complete GitHub Actions Course:** [DevOps Directive - From BEGINNER to PRO](https://www.youtube.com/watch?v=Xwpi0ITkL3U) — An exhaustive 3.5-hour masterclass by Sid Palace detailing runner footprints, declarative job configurations, caching pipelines, and secure secret patterns.
-* 📋 **Production DevOps Pipeline Series:** [Anton Putra - GitHub Actions & CI/CD Master Playlist](https://www.youtube.com/playlist?list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY) — A multi-part framework breakdown walking through practical microservice orchestration, Kubernetes integrations, and secure container shipping.
+* [📺 **Complete GitHub Actions Course:**](https://www.youtube.com/watch?v=Xwpi0ITkL3U) — An exhaustive 3.5-hour masterclass by Sid Palace detailing runner footprints, declarative job configurations, caching pipelines, and secure secret patterns.
+* [📋 **GitHub Actions & CI/CD Master Playlist:**](https://www.youtube.com/playlist?list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY) — A multi-part framework breakdown walking through practical microservice orchestration, Kubernetes integrations, and secure container shipping.
 
 ---
 
