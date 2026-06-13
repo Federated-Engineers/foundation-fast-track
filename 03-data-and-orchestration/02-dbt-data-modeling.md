@@ -6,7 +6,7 @@ To establish your functional baseline, you are required to complete the official
 
 *  **Official dbt Labs Course:** [dbt Fundamentals Training Path](https://learn.getdbt.com/learn/course/dbt-fundamentals/welcome-to-dbt-fundamentals-5min/welcome?page=1)
   
-*  **Deep-Dive Video Masterclass:** [dbt - The Ultimate Guide | With CI/CD](https://www.youtube.com/watch?v=B8uwFmVt4sU) — An exhaustive 5-hour breakdown by Ansh Lamba covering dbt Core, CLI execution, materializations, macros, testing paradigms, and CI/CD workflows.
+*  **Deep-Dive Video Masterclass:** [dbt - The Ultimate Guide | With CI/CD](https://www.youtube.com/watch?v=B8uwFmVt4sU): An exhaustive 5-hour breakdown by Ansh Lamba covering dbt Core, CLI execution, materializations, macros, testing paradigms, and CI/CD workflows.
 
 ---
 
@@ -52,7 +52,7 @@ Every `.sql` file you create inside a dbt project is called a **Model**. Models 
 
 * `table`: Physically drops and rebuilds a complete static dataset inside the storage layer.
    
-* `incremental`: High-speed performance strategy that only scans and updates rows changed since the last execution run—critical for our high-velocity log datasets.
+* `incremental`: High-speed performance strategy that only scans and updates rows changed since the last execution runcritical for our high-velocity log datasets.
   
 * `ephemeral`: Lightweight CTE (Common Table Expression) strings that don't materialize physically in the database at all but can be nested inside other models.
 
