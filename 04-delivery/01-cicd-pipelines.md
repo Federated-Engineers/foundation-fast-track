@@ -1,4 +1,4 @@
-# 🚀 Continuous Integration & Continuous Delivery (CI/CD)
+# Continuous Integration & Continuous Delivery (CI/CD)
 
 ### Upstream Curriculum & Training Playlists
 To establish an enterprise-grade understanding of automated release workflows, cloud credentials isolation, and self-healing deployment design, you are required to complete these curated video modules:
@@ -7,7 +7,7 @@ To establish an enterprise-grade understanding of automated release workflows, c
 
 ---
 
-## 🚨 The Existing Problem: The Operational Risk of Manual Shipping
+## The Existing Problem: The Operational Risk of Manual Shipping
 
 Before tools like GitHub Actions, GitLab CI, or Jenkins stabilized the industry, shipping software and data platforms to production was a chaotic, manual task handled by specialized release teams. This approach introduced significant failure vectors:
 
@@ -18,7 +18,7 @@ Before tools like GitHub Actions, GitLab CI, or Jenkins stabilized the industry,
 
 ---
 
-## 💡 The Solution: Shifting Safety Left via Automated Pipelines
+## The Solution: Shifting Safety Left via Automated Pipelines
 
 CI/CD entirely eliminates human manual error by translating the integration, validation, and deployment phases into an automated, deterministic lifecycle loop.
 
@@ -40,7 +40,7 @@ Once the CI pipeline certifies that the code is stable and passes all quality be
 
 ---
 
-## 🏢 Why CI/CD is Mandatory at Federated Engineers
+## Why CI/CD is Mandatory at Federated Engineers
 
 At Federated Engineers, **we treat human operational touchpoints in the deployment cycle as a system flaw.** Our platforms are complex, distributed architectures processing high-velocity data. 
 
@@ -51,7 +51,7 @@ We maintain a strict pipeline enforcement standard:
 
 ---
 
-## 🧠 Core GitHub Actions Architecture
+## Core GitHub Actions Architecture
 
 To write custom configurations successfully, you must master the fundamental hierarchical components of GitHub Actions:
 
@@ -62,13 +62,12 @@ To write custom configurations successfully, you must master the fundamental hie
 * **Steps:** The sequential individual task operations executed inside a specific job. A step can run a basic shell script (`run: pip install -r requirements.txt`) or call reusable complex plugin modules from the GitHub Marketplace (`uses: actions/checkout@v4`).
 
 ---
-
-🎯 Challenge
+ Challenge
 You must create a local codebase that intentionally challenges an automated pipeline's linting and formatting rules. 
 Once the pipeline enforces clean standards, it must autonomously build your application into a Docker container image 
 and securely ship it to your remote public container registry (Dockerhub).
 
-🛠️ Technical Specifications
+ Technical Specifications
 1. The Application Component
 Create a simple Python script that reads from an API and save the data after some transformation as a parquet file.
 
