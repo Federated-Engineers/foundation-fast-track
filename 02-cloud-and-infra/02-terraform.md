@@ -46,5 +46,5 @@ To supplement your reading of the CDE material, watch these tutorials to see Ter
 
 * 📺 [Terraform Deep Dive](https://www.youtube.com/watch?v=OHzZ7KuioMA).
 * [Terraform Architecture](https://spacelift.io/blog/terraform-architecture)
-* 
+  
 
