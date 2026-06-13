@@ -36,23 +36,25 @@ An image built on your machine is isolated until you push it to a **Container Re
 
 When you move to our production repositories, you will use the exact same lifecycle commands to push images to **Amazon ECR (Elastic Container Registry)**:
 
+
 ## Deep Dive: Networks and Volumes
 
 To build resilient multi-container platforms, you must understand how Docker handles state and communication:
 
-### - Docker Volumes (Data Persistence)
-  Containers are ephemeral—if a container is deleted, any data written inside its isolated filesystem vanishes.
-  We use Docker Volumes to mount a directory from the host machine into the container.
-  This ensures that database records or application logs persist safely even if the container crashes or restarts.
+### Docker Volumes (Data Persistence)
 
-### - Docker Networks (Container-to-Container Communication)
+Containers are ephemeral, if a container is deleted, any data written inside its isolated filesystem vanishes. We use Docker Volumes to mount a directory from the host machine into the container. This ensures that database records or application logs persist safely even if the container crashes or restarts.
+
+### Docker Networks (Container-to-Container Communication)
+
 Docker provides an embedded DNS server for containers. When containers are attached to the same custom bridge network,
 they don't need to know each other's IP addresses; they can communicate securely using just their Container
 Names as hostnames.
 
+
 ## Fast-Track Resources
 
-- Curated Videos
+### Curated Videos
 
 📺 [Docker crash course](https://www.youtube.com/watch?v=3c-iBn73dDE) 
 
@@ -60,17 +62,19 @@ Names as hostnames.
 
 📺 [Docker Networking Deep Dive](https://www.youtube.com/watch?v=OU6xOM0SE4o) — Crucial for understanding how multiple containers talk to each other.
 
-## Official Documentation
+
+### Official Documentation
 
 - [Official Dockerfile Reference Manual](https://docs.docker.com/reference/dockerfile/)
 
 - [Docker Engine Networking Overview](https://docs.docker.com/engine/network/)
 
 
-## The Acceleration Exercise: The Network Isolation Trap
+### The Acceleration Exercise: The Network Isolation Trap
 
 In this exercise, you will run into a classic architectural trap: network isolation. 
 You will experience what happens when two dependent services cannot see each other, and you will learn how to fix it.
+
 
 ## Scenario Overview
 
@@ -90,6 +94,7 @@ Create two entirely separate custom networks named `network-alpha` and `network-
 - Ensure this container run inside `network-beta`.
 
 #### Step 3: Fix the Network Issue
+
 You should experience an issue as you launch Container B as both containers cannot talk to each other, 
 please fix the issue.
 You should be able to see the data you read from the API in the database table if all is foxed.
