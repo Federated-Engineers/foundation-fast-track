@@ -49,11 +49,11 @@ As you step through the [dbt Fundamentals Course](https://learn.getdbt.com/learn
 Every `.sql` file you create inside a dbt project is called a **Model**. Models are structurally built around materialization strategies configured in your `dbt_project.yml` file:
 
 * `view`: Virtual query tables re-run on demand (Lightweight, no storage cost).
-* 
+
 * `table`: Physically drops and rebuilds a complete static dataset inside the storage layer.
-* 
+   
 * `incremental`: High-speed performance strategy that only scans and updates rows changed since the last execution run—critical for our high-velocity log datasets.
-* 
+  
 * `ephemeral`: Lightweight CTE (Common Table Expression) strings that don't materialize physically in the database at all but can be nested inside other models.
 
 #### 2. The Power of `ref()` (DAG Lineage)
