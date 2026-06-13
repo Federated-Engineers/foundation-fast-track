@@ -25,11 +25,11 @@ To be fully effective on our team, you must move past basic commands and be comf
 
 We highly recommend watching these videos to solidify your mental model before jumping into production repositories:
 
-*  [Git & GitHub Crash Course for Beginners (freeCodeCamp)](https://www.youtube.com/watch?v=RGOj5yH7evk) — A phenomenal, comprehensive foundation covering local vs. remote workflows.
+*  [Git & GitHub Crash Course for Beginners (freeCodeCamp)](https://www.youtube.com/watch?v=RGOj5yH7evk) : A phenomenal, comprehensive foundation covering local vs. remote workflows.
 
-*  [Git Merge vs. Rebase: What's the Difference?](https://www.youtube.com/watch?v=0chZFIZLR_0) — A visually clear breakdown of when and why to use rebase over merge to maintain a clean history.
+*  [Git Merge vs. Rebase: What's the Difference?](https://www.youtube.com/watch?v=0chZFIZLR_0) : A visually clear breakdown of when and why to use rebase over merge to maintain a clean history.
 
-*  [How to Handle Git Merge Conflicts with Confidence](https://www.youtube.com/watch?v=JtIX3HJKwfo) — Merge conflicts are a daily reality in collaborative teams. Learn how to diagnose and fix them using your IDE safely.
+*  [How to Handle Git Merge Conflicts with Confidence](https://www.youtube.com/watch?v=JtIX3HJKwfo) : Merge conflicts are a daily reality in collaborative teams. Learn how to diagnose and fix them using your IDE safely.
 
 ---
 
