@@ -2,7 +2,10 @@
 
 ## Upstream Curriculum Reference ( VERY IMPORTANT!!!! )
 
-> **Core Reading Material:** This module builds directly upon the foundational cloud architecture curriculum maintained by the **CoreDataEngineers Bootcamp**. For deep-dive theoretical explanations, architectural diagrams, and foundational lab notes, review their upstream repository:
+> **Core Reading Material:** This module builds directly upon the foundational cloud architecture curriculum maintained by the **CoreDataEngineers Bootcamp**.
+ 
+> For deep-dive theoretical explanations, architectural diagrams, and foundational lab notes, review their upstream repository:
+
 >  [CoreDataEngineers CDE-BOOTCAMP - AWS Cloud Module](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/09_aws_cloud)
 
 ---
