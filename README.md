@@ -80,5 +80,5 @@ While Airflow handles the orchestration, DBT handles our data transformations in
 #### CI/CD Pipelines:
 Continuous Integration and Continuous Delivery sit at the corner of nearly every single repository at Federated Engineers. Automation is embedded as a strict standard across all our deliverable projects. Having a strong base knowledge of CI/CD pipelines will massively benefit you, enabling you to automate testing, linting, and cloud deployments the second your code is merged.
 
-# Ready to Start?
+## Ready to Start?
 Let's get moving. Open up your terminal, clone this repository, and dive into your first module:
