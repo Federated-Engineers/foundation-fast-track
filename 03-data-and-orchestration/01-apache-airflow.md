@@ -1,6 +1,6 @@
-# 💨 Apache Airflow: Workflow Orchestration & Pipelines
+# Apache Airflow: Workflow Orchestration & Pipelines
 
-### Why We Use It at Federated Engineers
+## Why We Use It at Federated Engineers
 At Federated Engineers, we process, transform, and move massive volumes of data daily. A single production data flow might require pulling data from an external API, dumping it into an Amazon S3 bucket, spinning up an ephemeral container to process it, loading it into our cloud data warehouse, and finally running DBT transformations.
 
 If we relied on basic shell scripts or cron jobs, a single network failure would silently crash the entire sequence with no auto-retries, no centralized logging, and no visualization. 
@@ -9,7 +9,7 @@ If we relied on basic shell scripts or cron jobs, a single network failure would
 
 ---
 
-## 🧠 What is Orchestration and a DAG?
+## What is Orchestration and a DAG?
 
 Orchestration is the practice of coordinating automated, independent computing tasks into a unified, predictable workflow. 
 In Airflow, workflows are defined as code using **DAGs (Directed Acyclic Graphs)**.
@@ -21,7 +21,7 @@ In Airflow, workflows are defined as code using **DAGs (Directed Acyclic Graphs)
 
 ---
 
-## 🏗️ The 5 Core Components of Airflow (How They Work)
+## The 5 Core Components of Airflow (How They Work)
 
 Airflow is not a single monolith; it is a distributed cluster of micro-services that collaborate continuously. 
 
@@ -41,30 +41,35 @@ The Scheduler decides *when* a task runs, but the **Executor** determines *how* 
 ### 5. The DAG File Processor
 A background helper sub-process that constantly scans your designated `dags/` Python folder. It translates your Python script syntax into a serialized JSON format and updates the Metadata DB so the UI and Scheduler can instantly see your changes.
 
-# Understanding Scheduling:
-`schedule:` Accepts cron presets (like @hourly, @daily, @weekly) or custom cron expressions specifying 
+## Understanding Scheduling:
+
+#### `schedule:` Accepts cron presets (like @hourly, @daily, @weekly) or custom cron expressions specifying 
 exactly what minute, hour, day, and month to wake up.
 
-`catchup=False:` Critical configuration flag. If your start_date is set to 6 months ago, setting catchup=True forces 
+#### `catchup=False:` Critical configuration flag. If your start_date is set to 6 months ago, setting catchup=True forces 
 Airflow to instantly execute hundreds of historic backfill runs simultaneously, 
 which can completely overwhelm your database and infrastructure.
 
-🛠️ The Power of Operators
+## The Power of Operators
 An Operator is a predefined template block used to create a single task inside your DAG. 
 You don't write low-level code to open connections; you just pick the right tool for the job:
 
-Action Operators: Execute a distinct command or block of logic.
+#### Action Operators:
+Execute a distinct command or block of logic.
 
-- `BashOperator:` Runs bash commands or custom shell scripts.
+#### BashOperator:
+Runs bash commands or custom shell scripts.
 
-- `PythonOperator:` Calls an isolated custom Python function.
+#### PythonOperator:
+Calls an isolated custom Python function.
 
-- `Transfer Operators:` Built specifically to move data from Source A to Destination B.
+#### Transfer Operators:
+Built specifically to move data from Source A to Destination B.
 
 Examples: `S3ToRedshiftOperator`, `SQLExecuteQueryOperator`.
 
 
-📺 Fast-Track Resources (Curated YouTube Videos)
+### Fast-Track Resources (Curated YouTube Videos)
 To master modern Airflow structure and visual configurations, study these comprehensive, video resources:
 
 📺 [Airflow Tutorial For Beginners | Apache Airflow Full Course](https://www.youtube.com/watch?v=IiczxlbQb8s) — A fantastic onestop 2026 masterclass by Ansh Lamba going deep into core concepts, modern SDK usage, structures, and practical local labs.
