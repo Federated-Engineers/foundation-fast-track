@@ -2,8 +2,8 @@
 
 ### Upstream Curriculum & Training Playlists
 To establish an enterprise-grade understanding of automated release workflows, cloud credentials isolation, and self-healing deployment design, you are required to complete these curated video modules:
-* [📺 **Complete GitHub Actions Course:**](https://www.youtube.com/watch?v=Xwpi0ITkL3U) — An exhaustive 3.5-hour masterclass by Sid Palace detailing runner footprints, declarative job configurations, caching pipelines, and secure secret patterns.
-* [📋 **GitHub Actions & CI/CD Master Playlist:**](https://www.youtube.com/playlist?list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY) — A multi-part framework breakdown walking through practical microservice orchestration, Kubernetes integrations, and secure container shipping.
+* [ **Complete GitHub Actions Course:**](https://www.youtube.com/watch?v=Xwpi0ITkL3U) — An exhaustive 3.5-hour masterclass by Sid Palace detailing runner footprints, declarative job configurations, caching pipelines, and secure secret patterns.
+* [ **GitHub Actions & CI/CD Master Playlist:**](https://www.youtube.com/playlist?list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY) — A multi-part framework breakdown walking through practical microservice orchestration, Kubernetes integrations, and secure container shipping.
 
 ---
 
@@ -62,19 +62,24 @@ To write custom configurations successfully, you must master the fundamental hie
 * **Steps:** The sequential individual task operations executed inside a specific job. A step can run a basic shell script (`run: pip install -r requirements.txt`) or call reusable complex plugin modules from the GitHub Marketplace (`uses: actions/checkout@v4`).
 
 ---
- Challenge
+### Challenge
+
 You must create a local codebase that intentionally challenges an automated pipeline's linting and formatting rules. 
 Once the pipeline enforces clean standards, it must autonomously build your application into a Docker container image 
 and securely ship it to your remote public container registry (Dockerhub).
 
- Technical Specifications
+### Technical Specifications
+
 1. The Application Component
+
 Create a simple Python script that reads from an API and save the data after some transformation as a parquet file.
 
 2. The Packaging Component
+
 Write a Dockerfile file to containerize your Python application.
 
 3. The Continuous Integration (CI) 
+
 Implement a GitHub Actions workflow that triggers dynamically on any code push or pull request to your branch.
 
 Integrate two explicit quality tools: `flake8` (to assert style and syntax compliance) and `isort` (to assert that import hierarchies are organized cleanly).
@@ -82,6 +87,7 @@ Integrate two explicit quality tools: `flake8` (to assert style and syntax compl
 The pipeline must be designed to throw an immediate error code and stop running if either of these tools detects structural messiness.
 
 4. The Continuous Delivery (CD)
+
 Establish a separate deployment sequence within the same workflow.
 
 Hard Rule: This deployment sequence must possess an explicit dependency tag. It must never run if the code quality verification step fails or is skipped.
