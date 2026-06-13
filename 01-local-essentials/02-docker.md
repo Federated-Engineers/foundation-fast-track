@@ -6,7 +6,7 @@ At Federated Engineers, we run the vast majority of our production workloads on 
 
 Before your code ever reaches the AWS cloud, it has to be containerized. Docker allows us to bundle our application code, runtime, system tools, and libraries into a single immutable package called an **Image**. This guarantees that the exact same code you test on your laptop behaves identically when deployed to a cluster of hundreds of servers in AWS. 
 
-Mastering Docker locally—specifically how containers build, store data, and talk to each other over networks—is an absolute prerequisite to managing cloud architecture.
+Mastering Docker locally, specifically how containers build, store data and talk to each other over networks is an absolute prerequisite to managing cloud architecture.
 
 ---
 
@@ -58,9 +58,9 @@ Names as hostnames.
 
 📺 [Docker crash course](https://www.youtube.com/watch?v=3c-iBn73dDE) 
 
-📺 [Docker Storage & Volumes Explained Simply](https://www.youtube.com/watch?v=ZAPX21TMkkQ) — Learn how to keep your data from disappearing.
+📺 [Docker Storage & Volumes Explained Simply](https://www.youtube.com/watch?v=ZAPX21TMkkQ) : Learn how to keep your data from disappearing.
 
-📺 [Docker Networking Deep Dive](https://www.youtube.com/watch?v=OU6xOM0SE4o) — Crucial for understanding how multiple containers talk to each other.
+📺 [Docker Networking Deep Dive](https://www.youtube.com/watch?v=OU6xOM0SE4o) : Crucial for understanding how multiple containers talk to each other.
 
 
 ### Official Documentation
@@ -79,6 +79,7 @@ You will experience what happens when two dependent services cannot see each oth
 ## Scenario Overview
 
 #### Step 1: Create Two Isolated Networks
+
 Create two entirely separate custom networks named `network-alpha` and `network-beta`.
 
 #### Step 2: You need to spin up two containers:
@@ -97,4 +98,4 @@ Create two entirely separate custom networks named `network-alpha` and `network-
 
 You should experience an issue as you launch Container B as both containers cannot talk to each other, 
 please fix the issue.
-You should be able to see the data you read from the API in the database table if all is foxed.
+You should be able to see the data you read from the API in the database table if all is fixed.
