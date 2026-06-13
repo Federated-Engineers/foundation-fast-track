@@ -4,7 +4,7 @@
 
 >  **Core Reading Material:** This module relies heavily on the exhaustive Infrastructure as Code (IaC) materials compiled by the **CoreDataEngineers Bootcamp**. You are required to read through their repository thoroughly to understand HCL syntax, provider blocks, and state management:
 
-> 👉 [CoreDataEngineers CDE-BOOTCAMP - Terraform Module](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/10_terraform)
+>  [CoreDataEngineers CDE-BOOTCAMP - Terraform Module](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/10_terraform)
 
 ---
 
