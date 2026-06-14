@@ -13,11 +13,11 @@ To establish your functional baseline, you are required to complete the official
 ## The Existing Problem: The Chaos of Raw Data Transformation
 Before dbt came to prominence, managing transformations inside data warehouses was highly fragmented and fragile. Organizations suffered from standard architectural bottlenecks:
 
-1. **The "Stored Procedure" Nightmare:** Thousands of lines of custom SQL were trapped inside sprawling, unversioned database stored procedures. If a transformation broke, finding which line failed was nearly impossible.
+1. **`The "Stored Procedure" Nightmare:`** Thousands of lines of custom SQL were trapped inside sprawling, unversioned database stored procedures. If a transformation broke, finding which line failed was nearly impossible.
 
-2. **Brittle Python Wrappers:** Engineers wrote custom Python or Airflow scripts simply to pass SQL strings down to a warehouse. This added boilerplate orchestration code without solving the fundamental lack of data quality tracking.
+2. **`Brittle Python Wrappers:`** Engineers wrote custom Python or Airflow scripts simply to pass SQL strings down to a warehouse. This added boilerplate orchestration code without solving the fundamental lack of data quality tracking.
 
-3. **Zero Software Engineering Best Practices:** Data analysts and analytics engineers wrote production SQL with no concept of staging vs. production environments, no automated unit testing, no documentation, and zero version control (`git`).
+3. **`Zero Software Engineering Best Practices:`** Data analysts and analytics engineers wrote production SQL with no concept of staging vs. production environments, no automated unit testing, no documentation, and zero version control (`git`).
 
 ## What is dbt and How Does It Solve This?
 
@@ -27,11 +27,11 @@ dbt does **not** extract or load data (the "E" and "L" in ELT). Instead, it focu
 
 By introducing dbt, we gain:
 
-* **Version Controlled SQL:** Everything lives inside Git. No more hidden, un-tracked database code changes.
+* **`Version Controlled SQL:`** Everything lives inside Git. No more hidden, un-tracked database code changes.
 
-* **Modular Code Reuse:** Through **Jinja templating** and macros, we can write a SQL block once and reuse it dynamically across dozens of tables.
+* **`Modular Code Reuse:`** Through **Jinja templating** and macros, we can write a SQL block once and reuse it dynamically across dozens of tables.
 
-* **Automated Data Quality Safeguards:** We can declare validation schemas right inside YAML config files to test our data at runtime.
+* **`Automated Data Quality Safeguards:`** We can declare validation schemas right inside YAML config files to test our data at runtime.
 
 ---
 
