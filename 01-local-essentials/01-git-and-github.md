@@ -30,19 +30,3 @@ We highly recommend watching these videos to solidify your mental model before j
 *  [Git Merge vs. Rebase: What's the Difference?](https://www.youtube.com/watch?v=0chZFIZLR_0) : A visually clear breakdown of when and why to use rebase over merge to maintain a clean history.
 
 *  [How to Handle Git Merge Conflicts with Confidence](https://www.youtube.com/watch?v=JtIX3HJKwfo) : Merge conflicts are a daily reality in collaborative teams. Learn how to diagnose and fix them using your IDE safely.
-
----
-
-## The Acceleration Exercise
-
-To prove you are comfortable with our collaborative workflow, navigate to the `01-local-essentials/exercises/` directory and complete the **Merge Conflict Resolution** exercise. 
-
-## Objective: 
-
-You will simulate a real-world scenario where a teammate has modified the exact same file as you on the `main` branch. You will be tasked with pulling their changes, encountering a conflict, resolving it locally without losing data, and prepping a clean commit to push.
-
-## Steps to execute:
-
-1. Open your terminal and create a new local branch: 
-   ```bash
-   git checkout -b feature/yourname-git-practice
