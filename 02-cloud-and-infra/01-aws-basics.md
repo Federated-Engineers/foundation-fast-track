@@ -13,7 +13,7 @@
 ## Why We Use It at Federated Engineers
 Amazon Web Services (AWS) is the absolute bedrock of our cloud infrastructure. We don't maintain physical servers; everything we build, orchestrate, and deliver lives inside AWS. 
 
-As a Federated Engineer, you cannot build resilient data platforms or deploy services blindly. You need to understand how the underlying network flows, how security permissions are tightly locked down, and where your compute power actually executes. Whether you are writing an Airflow DAG or optimizing a container image, your code interacts with AWS resources constantly. Mastering these cloud basics is entirely non-negotiable.
+As an Engineer in our pool, you cannot build resilient data platforms or deploy services blindly. You need to understand how the underlying network flows, how security permissions are tightly locked down, and where your compute power actually executes. Whether you are writing an Airflow DAG or optimizing a container image, your code interacts with AWS resources constantly. Mastering these cloud basics is entirely non-negotiable.
 
 ---
 
@@ -54,8 +54,4 @@ Note: Please watch it in this order below
 * 📺 [AWS VPC Tutorial for Beginners](https://www.youtube.com/watch?v=43tIX7901Gs) — A fantastic step-by-step mapping of VPC, subnets, route tables, and gateways.
 
 * 📺 [AWS EC2 Deep dive](https://www.youtube.com/watch?v=4dscVzCaXCU) — *Note: You don't need to watch all.*
-
----
-
-## The Acceleration Exercise: Connecting everything together
 
