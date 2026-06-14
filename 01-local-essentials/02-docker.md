@@ -2,7 +2,7 @@
 
 ## Why We Use It at Federated Engineers
 
-At Federated Engineers, we run the vast majority of our production workloads on container orchestration platforms like **Amazon EKS (Kubernetes)** and **Amazon ECS**. 
+At `Federated Engineers`, we run the vast majority of our production workloads on container orchestration platforms like **Amazon EKS (Kubernetes)** and **Amazon ECS**. 
 
 Before your code ever reaches the AWS cloud, it has to be containerized. Docker allows us to bundle our application code, runtime, system tools, and libraries into a single immutable package called an **Image**. This guarantees that the exact same code you test on your laptop behaves identically when deployed to a cluster of hundreds of servers in AWS. 
 
@@ -74,28 +74,3 @@ Names as hostnames.
 
 In this exercise, you will run into a classic architectural trap: network isolation. 
 You will experience what happens when two dependent services cannot see each other, and you will learn how to fix it.
-
-
-## Scenario Overview
-
-#### Step 1: Create Two Isolated Networks
-
-Create two entirely separate custom networks named `network-alpha` and `network-beta`.
-
-#### Step 2: You need to spin up two containers:
-
-- Container A (postgres-db): A standard PostgreSQL database container.
-
-- Ensure this container run inside `network-alpha`.
-
-- Container B (data-fetcher): You need to write a script that reads mock data from any public API and attempts to write it to a database.
-
-- Write a Dockerfile, package this script into an Image and run it in a container.
-
-- Ensure this container run inside `network-beta`.
-
-#### Step 3: Fix the Network Issue
-
-You should experience an issue as you launch Container B as both containers cannot talk to each other, 
-please fix the issue.
-You should be able to see the data you read from the API in the database table if all is fixed.
