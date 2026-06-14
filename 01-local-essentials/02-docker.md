@@ -68,9 +68,3 @@ Names as hostnames.
 - [Official Dockerfile Reference Manual](https://docs.docker.com/reference/dockerfile/)
 
 - [Docker Engine Networking Overview](https://docs.docker.com/engine/network/)
-
-
-### The Acceleration Exercise: The Network Isolation Trap
-
-In this exercise, you will run into a classic architectural trap: network isolation. 
-You will experience what happens when two dependent services cannot see each other, and you will learn how to fix it.
