@@ -15,9 +15,9 @@ Orchestration is the practice of coordinating automated, independent computing t
 In Airflow, workflows are defined as code using **DAGs (Directed Acyclic Graphs)**.
 
 
-* **Directed:** The workflow has a specific direction, flowing sequentially from upstream tasks to downstream tasks.
-* **Acyclic:** The workflow cannot contain loops. Task A cannot link back to Task A, preventing infinite execution loops.
-* **Graph:** A mathematical design mapping structural relationships. Tasks represent the **Nodes**, and the dependencies between them represent the **Edges**.
+* **`Directed:`** The workflow has a specific direction, flowing sequentially from upstream tasks to downstream tasks.
+* **`Acyclic:`** The workflow cannot contain loops. Task A cannot link back to Task A, preventing infinite execution loops.
+* **`Graph:`** A mathematical design mapping structural relationships. Tasks represent the **Nodes**, and the dependencies between them represent the **Edges**.
 
 ---
 
@@ -26,19 +26,19 @@ In Airflow, workflows are defined as code using **DAGs (Directed Acyclic Graphs)
 Airflow is not a single monolith; it is a distributed cluster of micro-services that collaborate continuously. 
 
 
-### 1. The Metadata Database
+### `1. The Metadata Database`
 The single source of truth for the entire environment. It records the status of every single task run, user credentials, connection variables, and DAG definitions. In our local setup, we use PostgreSQL to match what we run in production.
 
-### 2. The Scheduler
+### `2. The Scheduler`
 A highly efficient daemon process that continuously monitors all DAG files and task states. When it recognizes that a task's upstream dependencies are completely met and its schedule time has arrived, it hands that task off to the executor.
 
-### 3. The Webserver
+### `3. The Webserver`
 The graphical user interface (UI) you open in your browser. It interacts directly with the Metadata Database to allow engineers to trigger DAGs manually, inspect code, read live execution logs, and clear failed tasks to re-run them.
 
-### 4. The Executor & Workers
+### `4. The Executor & Workers`
 The Scheduler decides *when* a task runs, but the **Executor** determines *how* it runs, pushing the workload down to the **Workers** (which actually run your code). At Federated Engineers, we configure our staging and production clusters to leverage the `KubernetesExecutor` or `CeleryExecutor` to dynamically scale computational power.
 
-### 5. The DAG File Processor
+### `5. The DAG File Processor`
 A background helper sub-process that constantly scans your designated `dags/` Python folder. It translates your Python script syntax into a serialized JSON format and updates the Metadata DB so the UI and Scheduler can instantly see your changes.
 
 ## Understanding Scheduling:
@@ -54,13 +54,13 @@ which can completely overwhelm your database and infrastructure.
 An Operator is a predefined template block used to create a single task inside your DAG. 
 You don't write low-level code to open connections; you just pick the right tool for the job:
 
-#### Action Operators:
+#### `Action Operators:`
 Execute a distinct command or block of logic.
 
-#### BashOperator:
+#### `BashOperator:`
 Runs bash commands or custom shell scripts.
 
-#### PythonOperator:
+#### `PythonOperator:`
 Calls an isolated custom Python function.
 
 #### Transfer Operators:
