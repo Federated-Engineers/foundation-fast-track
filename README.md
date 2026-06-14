@@ -35,7 +35,7 @@ foundation-fast-track/
 Before watching videos or writing code, read the Why We Use It section in each module. Understanding the business and engineering context is more important than memorizing syntax.
 
 #### Watch then Do:
-Watch the linked YouTube videos to establish your mental model, then immediately open the /exercises folder inside that module to practice.
+Watch the linked YouTube videos to establish your mental model, make sure to get hands on while watching, play around, break things to understand why it work, then immediately take the challenge task prepared after each module.
 
 #### Break Things Safely:
 This repository is a sandbox. Tweak the Dockerfiles, break the Terraform code, and cause Git conflicts on purpose to learn how to fix them here, rather than in production.
@@ -45,27 +45,27 @@ This repository is a sandbox. Tweak the Dockerfiles, break the Terraform code, a
 ### 01-local-essentials
 
 #### Git & GitHub:
-Federated Engineers is fundamentally a collaborative tool. Mastery of Git is a massive, non-negotiable must-have. You must be comfortable managing branches, resolving complex merge conflicts, and conducting clean Peer Reviews via Pull Requests. If our Git workflow stalls, our entire engineering shipping velocity stalls.
+Federated Engineers is fundamentally a collaborative pool. Mastery of Git is a `massive`, `non-negotiable` must-have. You must be comfortable managing branches, resolving complex merge conflicts, and conducting clean Peer Reviews via Pull Requests. If our Git workflow stalls, our entire engineering shipping velocity stalls.
 
 #### Docker:
-The majority of our production workloads run on heavy-duty container orchestration platforms like Amazon EKS (Elastic Kubernetes Service) and Amazon ECS (Elastic Container Service). To understand how code behaves on EKS/ECS, you must first master Docker locally. You need to know how to containerize applications, manage multi-container environments, and optimize image sizes.
+The majority of our production workloads run on container orchestration platforms like Amazon `EKS (Elastic Kubernetes Service)` and `Amazon ECS (Elastic Container Service)`. To understand how code behaves on EKS/ECS, you must first master Docker locally. You need to know how to containerize applications, manage multi-container environments, optimize image sizes, dcoker volume and understand docker networks a.
 
 ### 02-cloud-and-infra
 
 #### AWS (Core Infrastructure):
-Amazon Web Services is the absolute bedrock of our cloud footprint. You cannot build here without mastering three core areas:
+`Amazon Web Services - AWS` is the absolute bedrock of our cloud infrastructure. You cannot build here without mastering three core areas:
 
 #### IAM (Identity and Access Management):
 We enforce strict least-privilege principles. You must understand how roles, policies, and users grant secure permissions to our services.
 
 #### VPC (Virtual Private Cloud):
-When bootstrapping data platforms, solving complex networking challenges (subnets, routing, NAT gateways) is a daily reality. VPC knowledge is strictly non-negotiable.
+When bootstrapping data platforms, networking is at the core of systems communication, solving complex networking challenges (subnets, routing, NAT gateways) is a daily reality. VPC knowledge is strictly non-negotiable at Federated Engineers.
 
 #### EC2 (Elastic Compute Cloud):
-This is the fundamental compute server underlying our workloads. Understanding how EC2 instances operate, scale, and connect is critical.
+This is the fundamental compute server underlying our workloads. Understanding how EC2 instances operate, scale, and connect is critical. No data movemnet without a server at the end.
 
 #### Terraform:
-We never click around the AWS UI console to deploy infrastructure. Everything is declared as code. You will use Terraform to safely provision, modify, and track infrastructure changes safely.
+We never click around the UI console of our platforms to deploy infrastructure. Everything is declared as code. You will use Terraform to safely provision, modify, and track infrastructure changes safely.
 
 ### 03-data-and-orchestration
 
@@ -81,4 +81,4 @@ While Airflow handles the orchestration, DBT handles our data transformations in
 Continuous Integration and Continuous Delivery sit at the corner of nearly every single repository at Federated Engineers. Automation is embedded as a strict standard across all our deliverable projects. Having a strong base knowledge of CI/CD pipelines will massively benefit you, enabling you to automate testing, linting, and cloud deployments the second your code is merged.
 
 ## Ready to Start?
-Let's get moving. Open up your terminal, clone this repository, and dive into your first module:
+Dive into your first module now !!!!!!!
