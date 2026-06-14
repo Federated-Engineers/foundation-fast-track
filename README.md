@@ -2,9 +2,23 @@
 
 Welcome to **Federated Engineers**! 
 
-This repository is your acceleration pad. At Federated Engineers, we build high-performing, scalable and highly collaborative systems. To maintain our velocity, every engineer regardless of their specific role, must be thoroughly comfortable with the core tools and architectural patterns found in this repository. 
+This repository is your `Acceleration Resources` required to attempt our `Live Implementation Interview - LII` before you join our pool of Engineers. 
+
+At Federated Engineers, we build high-performing, scalable and highly collaborative systems. To maintain our velocity, every engineer regardless of their specific role, must be thoroughly comfortable with the core tools and architectural patterns found in this repository. 
 
 Consider this curriculum your shortcut to understanding our production environment so you can push your first lines of code with absolute confidence.
+
+## ⚠️⚠️⚠️ IMPORTANT !!!!!! ⚠️⚠️⚠️
+Our `Live Implementation Interview` is a way for us to ensure that the Engineers coming to our pool is well equiped with some 
+decent fundamnetals and knowledge to thrive in our environment.
+- The Interview is not a multiple choice.
+- This is not a Interview focused on only talking.
+- This is heavily focused on Hands-On
+- Area of `Challenge/Task` will be around the 4 layers in this Repository
+  - `01-local-essentials`
+  - `02-cloud-and-infra`
+  - `03-data-and-orchestration`
+  - `04-delivery`
 
 ---
 
