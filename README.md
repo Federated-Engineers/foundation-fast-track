@@ -2,7 +2,7 @@
 
 Welcome to **Federated Engineers**! 
 
-This repository is your `Acceleration Resources` required to attempt our `Live Implementation Interview - LII` before you join our pool of Engineers. 
+This repository is your `Acceleration Resources` required to attempt our `2-Hours Live Implementation Interview - LII` before you join our pool of Engineers. 
 
 At Federated Engineers, we build high-performing, scalable and highly collaborative systems. To maintain our velocity, every engineer regardless of their specific role, must be thoroughly comfortable with the core tools and architectural patterns found in this repository. 
 
